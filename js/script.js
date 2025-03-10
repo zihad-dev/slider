@@ -37,16 +37,14 @@ document.addEventListener("DOMContentLoaded", function () {
     updateSlider(currentSlide + 1);
   }
 
-  // Auto Slide Function
   function startAutoSlide() {
-    autoSlideInterval = setInterval(nextSlide, 3000); // প্রতি 3 সেকেন্ড পর Slide পরিবর্তন হবে
+    autoSlideInterval = setInterval(nextSlide, 2000); 
   }
 
   function stopAutoSlide() {
     clearInterval(autoSlideInterval);
   }
 
-  // Start auto slide on page load
   startAutoSlide();
 
   prevBtn.addEventListener("click", function () {
